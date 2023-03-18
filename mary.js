@@ -21,6 +21,16 @@
 // let balanse = 5000;
 // const payment = 2000;
 
+// console.log(`Загальна вартість товару замовлення ${payment} кредитів.
+//  Перевіряєм кількість доступних коштів на рахунку`)
+
+//  if(balanse >= payment) {
+//     balanse -=payment
+//     console.log(`На рахунку залишилось ${balanse} кредитів`)
+//  }else{
+//     console.log(`На рахунку не достатньо коштів для проведення операції`)
+//  }
+// console.log("Операція завершена")
 // .............................
 // Задача№ 2
 // спочатку if else
@@ -31,6 +41,55 @@
 //Якщо у змінній stars щось інше від чисел 1-5,
 // виведи строку
 // "Такої кількості зірок немає"
+
+// const stars = 1;
+// let price;
+
+// if(stars === 1){
+//     price = 20;
+
+// } else if(stars === 2){
+//     price = 30;
+
+// } else if(stars === 3){
+//     price = 50;
+
+// }else if(stars === 4){
+//     price = 70;
+
+// }else if(stars === 15){
+//     price = 120;
+// }
+
+//     const stars = 1;
+//     let price;
+
+//     switch(stars){
+//     case 1:
+//     price = 20;
+//     break
+
+//     case 2:
+//     price = 30;
+//     break
+
+//     case 3:
+//     price = 50;
+//     break
+
+//     case 4:
+//     price = 70;
+//     break
+
+//     case 5:
+//     price = 120;
+//     break
+
+//     default:
+//         console.log("Такої кількості зірок немає")
+    
+// }
+// console.log(price);
 
 // ..........................
 // Задача № 3
@@ -45,11 +104,42 @@
 // - "Посилка буде відправлена сьогодні"
 // - "Вам передзвонить менеджер"
 
+// const option = 1;
+// let message;
+
+// switch(option){
+//     case 1:
+//         message = "Ви можете забрати товар завтра з 12:00 у нашому офісі"
+//         break;
+
+//     case 2:
+//         message = "Курєр доставить замовлення завтра з 9:00 до 18:00"
+//         break;
+     
+//      case 3:
+//         message = "Посилка буде відправлена сьогодні"   
+//         break;
+
+//      default:
+//         console.log("Вам передзвонить менеджер");
+// }
+// console.log(message)
+
 // .......................
 // Задача №4 робимо разом
 
 // Напиши код який шукає найменше число в масиві
 // const numbers = [2, 17, 94, 1, 23, 37];
+
+// let smallNumber = numbers [0]
+
+// for (const number of numbers) {
+//     if(smallNumber > number){
+//         smallNumber = number
+
+//         console.log(number);
+//     }
+// }
 
 // ..........................
 // Задача № 5
@@ -58,44 +148,62 @@
 // const max = 100;
 // const min = 20;
 
+// for(let i = min; i <= max; i += 1){
+//     console.log(i)
+// }
+
 // ...................
 // Методи масивів
 
-// plit() join() reverse()
+// split() join() reverse()
 // Задача  № 6
 // Перевірити чи наша строка являється – паліндромом.
 // const str = "Пилип";
 // const newString = "Олег";
 
+// const array = str.split("")
+// array.reverse()
+// const joinString = array.join("")
+// console.log(joinString === str)
+
+// const palinDrop = newString.split("").reverse().join("")
+// console.log(palinDrop)
 // ....................
 // Задача № 7.1
 //  - Створити масив styles з елементами «Жовтий» і «Зелений».
 
+const accessories = ["Жовтий", "Зелений"]
 // .....................
 //  Метод push()
 // Задача № 7.2
+accessories.push("Білий")
 
 // - Добавте «Білий» в кінець.
 
 // ..................
 // метод splice()
 // Задача № 7.3
+accessories.splice(1, 1, "Червоний"  )
 
+console.log(accessories)
 // - Замініть значення елемента в середині на «Червоний».
 
 // .......................
 //метод shift()
 // Задача № 7.4
-
+const shift = accessories.shift()
+console.log(shift)
 // - Видаліть перший елемент і виведіть його в консоль.
 
 // ......................
 // метод unshift()
 // Задача № 7.5
-
+accessories.unshift("Фіолетовий","Рожевий")
 // - Вставте «Фіолетовий» и «Рожевий» на початок масива.
 
 // ................
 // Задача № 7.6
 //  - Видаліть перший елемент і збережіть його у змінну для подальшого використання
 //  Виведіть видалений елемент в консоль.
+
+console.log(accessories)
